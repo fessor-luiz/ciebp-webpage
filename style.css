@@ -1,10 +1,17 @@
 html {
-  margin: o;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .bg-azul {
   background-color: #25245a;
+}
+.bg-rosa {
+  background-color: #871f62;
+}
+
+.text-rosa {
+  color: #871f62;
 }
 
 .text-azul {

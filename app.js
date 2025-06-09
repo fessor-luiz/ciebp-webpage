@@ -6,7 +6,7 @@ const equipeContent = document.getElementById('equipe')
 const mainContent = document.getElementById('main')
 
 document.addEventListener('DOMContentLoaded', () => {
-    mainContent.innerHTML = ''
+    carregarPagina('sobre')
 })
 
 sobreContent.addEventListener('click', () => {

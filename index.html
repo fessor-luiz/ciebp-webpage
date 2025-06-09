@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="style.css" />
     <title>CIEBP ÂNGELO MENDES</title>
   </head>
-  <body class="container-fluid text-center">
-    <div class="row align-items-center bg-white justify-content-between">
+  <body class="container-fluid">
+    <!-- LOGO SP -->
+    <div class="row bg-white align-items-center">
       <div
         class="col-1 d-flex bg-black rounded-end-pill align-items-center justify-content-center"
         style="width: 300px; height: 75px"
@@ -30,29 +31,29 @@
           alt="logo-governo-do-estado-sp"
         />
       </div>
+      <!--  REDES SOCIAIS -->
       <div class="col p-0 d-none d-md-block" id="redes-sociais">
         <div class="d-flex justify-content-end pe-5">
           <i class="btn bi bi-instagram fs-3"></i>
         </div>
       </div>
     </div>
-    <div
-      class="row bg-azul d-sm-flex flex-sm-column flex-md-row align-items-center"
-      style="min-height: 75px"
-    >
+    <!-- Cabeçalho -->
+    <div class="row bg-azul align-items-center" style="min-height: 75px">
       <!-- Logo direita -->
       <img
-        class="m-4 ms-5 col-1 d-none d-md-block"
+        class="m-4 ms-5 col-1 d-none d-sm-block"
         src="src/img/logo-ciebp-branco.png"
         alt="logo ciebp"
         style="height: 90px; width: 100px"
       />
 
       <div class="col mt-0 d-flex justify-content-center align-items-center">
+        <!-- Nome escola -->
         <div
           class="d-flex flex-column h-100 text-white align-items-center justify-content-center"
         >
-          <label class="row h1 fw-bolder d-none d-md-block"
+          <label class="row h1 fw-bolder d-none d-sm-block"
             >ÂNGELO MENDES</label
           >
           <!-- Opções Menu -->
@@ -86,7 +87,7 @@
                 Trilhas
               </a>
             </p>
-            <p class="mb-1">
+            <p class="mb-0">
               <a
                 class="fs-4 link-underline-opacity-0 link-light link-opacity-100-hover"
                 href="#"
@@ -107,7 +108,7 @@
         style="height: 90px; width: 100px"
       />
     </div>
-    <main id="main" class="container mt-2 mb-2"></main>
+    <main id="main" class="container-fluid mx-0"></main>
     <script src="app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
