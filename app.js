@@ -1,8 +1,4 @@
-function teste(id) {
-    const element = document.getElementById(id)
 
-    alert(element.lastElementChild.innerHTML)
-}
 
 const isMobile = window.matchMedia("(max-width: 768px)").matches
 
@@ -10,6 +6,16 @@ if (!isMobile) {
     window.location.href = "notMobile.html"
 }
 
+function modalInformacoes(elemento) {
+    const imgModal = document.getElementById('img-modal')
+    const nomeModal = document.getElementById('nome-modal')
+    const espacoModal = document.getElementById('espaco-modal')
+    imgModal.src = elemento.src
+
+    // nomeModal.innerHTML = elemento.innerHTML
+    // espacoModal.innerHTML = elemento.innerHTML
+
+}
 function navEspacoSelecao(element) {
     const classePadrao = 'nav-link link-light text-center'
 
