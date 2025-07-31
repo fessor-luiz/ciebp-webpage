@@ -1,121 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+    <!-- prettier-ignore -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>CIEBP ÂNGELO MENDES</title>
+    <title>CIEBP - ÂNGELO MENDES</title>
   </head>
-  <body class="container-fluid">
-    <!-- LOGO SP -->
-    <div class="row bg-white align-items-center">
-      <div
-        class="col-1 d-flex bg-black rounded-end-pill align-items-center justify-content-center"
-        style="width: 300px; height: 75px"
-      >
+  <body>
+    <div class="col">
+      <header class="cabecalho d-flex">
+        <!-- LOGO DE SP + REDES SOCIAIS -->
+        <div class="rounded-end-pill bg-black p-4 w-75">
+          <img src="src/img/logo-governo-do-estado-sp.png" alt="" />
+        </div>
+        <div class="w-100 d-flex align-items-end justify-content-end">
+          <button class="ms-1 btn btn-outline-danger d-flex align-items-center">
+            <i class="me-1 bi bi-instagram fs-4"></i>
+          </button>
+          <button class="btn btn-outline-danger d-flex align-items-center">
+            <i class="me-1 bi bi-youtube fs-4"></i>
+          </button>
+        </div>
+      </header>
+      <!-- NOME DA ESCOLA -->
+      <div class="bg-azul vw-100 p-3 d-flex align-items-center">
+        <div class="col-auto">
+          <img
+            src="src/img/logo-ciebp-branco.png"
+            alt="logo-ciebp"
+            style="height: 75px"
+          />
+        </div>
+        <div
+          class="col d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="text-white text-center fw-bolder">Angelo Mendes</h1>
+        </div>
+      </div>
+
+      <!-- EQUIPE -->
+      <!-- <h1 class="text-center text-uppercase">Equipe</h1> -->
+      <div id="equipe" class="d-flex overflow-x-scroll">
         <img
-          class="object-fit-contain"
-          height="55px"
-          width="200px"
-          src="src/img/logo-governo-do-estado-sp.png"
-          alt="logo-governo-do-estado-sp"
+          src="src/img/avatar/Adlai.png"
+          height="100px"
+          width="100px"
+          class="object-fit-cover rounded-circle m-2"
+        />
+        <img
+          src="src/img/avatar/Andre.png"
+          height="100px"
+          width="100px"
+          class="object-fit-cover rounded-circle m-2"
+        />
+        <img
+          src="src/img/avatar/Cristina.png"
+          height="100px"
+          width="100px"
+          class="object-fit-cover rounded-circle m-2"
+        />
+        <img
+          src="src/img/avatar/Gustavo.png"
+          height="100px"
+          width="100px"
+          class="object-fit-cover rounded-circle m-2"
+        />
+        <img
+          src="src/img/avatar/Jefferson.png"
+          height="100px"
+          width="100px"
+          class="object-fit-cover rounded-circle m-2"
+        />
+        <img
+          src="src/img/avatar/Julio.png"
+          height="100px"
+          width="100px"
+          class="object-fit-cover rounded-circle m-2"
+        />
+        <img
+          src="src/img/avatar/Katherine.png"
+          height="100px"
+          width="100px"
+          class="object-fit-cover rounded-circle m-2"
+        />
+        <img
+          src="src/img/avatar/Kellen.png"
+          height="100px"
+          width="100px"
+          class="object-fit-cover rounded-circle m-2"
+        />
+        <img
+          src="src/img/avatar/Lucas.png"
+          height="100px"
+          width="100px"
+          class="object-fit-cover rounded-circle m-2"
+        />
+        <img
+          src="src/img/avatar/Luiz.png"
+          height="100px"
+          width="100px"
+          class="object-fit-cover rounded-circle m-2"
         />
       </div>
-      <!--  REDES SOCIAIS -->
-      <div class="col p-0 d-none d-md-block" id="redes-sociais">
-        <div class="d-flex justify-content-end pe-5">
-          <i class="btn bi bi-instagram fs-3"></i>
-        </div>
-      </div>
     </div>
-    <!-- Cabeçalho -->
-    <div class="row bg-azul align-items-center" style="min-height: 75px">
-      <!-- Logo direita -->
-      <img
-        class="m-4 ms-5 col-1 d-none d-sm-block"
-        src="src/img/logo-ciebp-branco.png"
-        alt="logo ciebp"
-        style="height: 90px; width: 100px"
-      />
-
-      <div class="col mt-0 d-flex justify-content-center align-items-center">
-        <!-- Nome escola -->
-        <div
-          class="d-flex flex-column h-100 text-white align-items-center justify-content-center"
-        >
-          <label class="row h1 fw-bolder d-none d-sm-block"
-            >ÂNGELO MENDES</label
-          >
-          <!-- Opções Menu -->
-          <div
-            class="d-flex flex-row align-items-md-center fw-semibold h-100 link-opacity-25-hover column-gap-4"
-          >
-            <p class="m-0">
-              <a
-                class="fs-4 link-underline-opacity-0 link-light link-opacity-100-hover"
-                href="#"
-                id="inicio"
-              >
-                Início
-              </a>
-            </p>
-            <p class="m-0">
-              <a
-                class="fs-4 link-underline-opacity-0 link-light link-opacity-100-hover"
-                href="#"
-                id="equipe"
-              >
-                Equipe
-              </a>
-            </p>
-            <p class="m-0">
-              <a
-                class="fs-4 link-underline-opacity-0 link-light link-opacity-100-hover"
-                href="#"
-                id="trilhas"
-              >
-                Trilhas
-              </a>
-            </p>
-            <p class="mb-0">
-              <a
-                class="fs-4 link-underline-opacity-0 link-light link-opacity-100-hover"
-                href="#"
-                id="sobre"
-              >
-                Sobre
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Logo direita -->
-      <img
-        class="m-4 me-5 col-1 d-none d-md-block"
-        src="src/img/logo-ciebp-branco.png"
-        alt="logo ciebp"
-        style="height: 90px; width: 100px"
-      />
-    </div>
-    <main id="main" class="container-fluid mx-0"></main>
+    <!-- prettier-ignore -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

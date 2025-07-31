@@ -1,0 +1,19 @@
+img,
+video {
+  max-width: 100%;
+}
+
+.bg-azul {
+  background-color: #25245a;
+}
+.bg-rosa {
+  background-color: #871f62;
+}
+
+.text-rosa {
+  color: #871f62;
+}
+
+.text-azul {
+  color: #25245a;
+}
