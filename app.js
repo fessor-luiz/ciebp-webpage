@@ -11,6 +11,7 @@ function modalInformacoes(elemento) {
     const nomeModal = document.getElementById('nome-modal')
     const espacoModal = document.getElementById('espaco-modal')
     const fraseEfeitoModal = document.getElementById('frase-efeito')
+    const emojiModal = document.getElementById('emoji-modal')
 
     const elementoNomePessoa = elemento.nextElementSibling
     const elementoEspacoPessoa = elementoNomePessoa.nextElementSibling
@@ -18,8 +19,11 @@ function modalInformacoes(elemento) {
     imgModal.src = elemento.src
     nomeModal.innerHTML = elementoNomePessoa.innerHTML
     espacoModal.innerHTML = elementoEspacoPessoa.innerHTML
-    if (informacoesPessoais[elementoNomePessoa.innerHTML] != undefined) {
-        fraseEfeitoModal.innerHTML = `"${informacoesPessoais[elementoNomePessoa.innerHTML].fraseEfeito}"`
+    nome = elementoNomePessoa.innerHTML
+
+    if (informacoesPessoais[nome] != undefined) {
+        fraseEfeitoModal.innerHTML = `"${informacoesPessoais[nome].fraseEfeito}"`
+        emojiModal.innerHTML = `${informacoesPessoais[nome].emojiFavorito}`
     } else {
         fraseEfeitoModal.innerHTML = ""
     }
@@ -48,18 +52,22 @@ function navEspacoSelecao(elemento) {
 
 const informacoesPessoais = {
     "Luiz Henrique": {
-        emojiFavorito: "🚗",
-        fraseEfeito: "C3 2006 é melhor que uma Ferrari F12",
+        emojiFavorito: "🎮",
+        fraseEfeito: "O inverno nunca falha em se tornar primavera ❄️🌸",
     },
     "Gustavo": {
         emojiFavorito: "💻",
-        fraseEfeito: "ARDUINOOOOO!",
+        fraseEfeito: "",
     },
     "Lucas": {
         emojiFavorito: "🍁😶‍🌫️",
         fraseEfeito: "Como é que é, amigo?",
     }, "Jefferson": {
-        emojiFavorito: "🍁😶‍🌫️",
-        fraseEfeito: "Não😇",
+        emojiFavorito: "",
+        fraseEfeito: "",
+    },
+    "Cristina": {
+        emojiFavorito: "",
+        fraseEfeito: "",
     },
 }
