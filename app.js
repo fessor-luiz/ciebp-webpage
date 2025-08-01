@@ -10,13 +10,22 @@ function modalInformacoes(elemento) {
     const imgModal = document.getElementById('img-modal')
     const nomeModal = document.getElementById('nome-modal')
     const espacoModal = document.getElementById('espaco-modal')
-    imgModal.src = elemento.src
+    const fraseEfeitoModal = document.getElementById('frase-efeito')
 
-    // nomeModal.innerHTML = elemento.innerHTML
-    // espacoModal.innerHTML = elemento.innerHTML
+    const elementoNomePessoa = elemento.nextElementSibling
+    const elementoEspacoPessoa = elementoNomePessoa.nextElementSibling
+
+    imgModal.src = elemento.src
+    nomeModal.innerHTML = elementoNomePessoa.innerHTML
+    espacoModal.innerHTML = elementoEspacoPessoa.innerHTML
+    if (informacoesPessoais[elementoNomePessoa.innerHTML] != undefined) {
+        fraseEfeitoModal.innerHTML = `"${informacoesPessoais[elementoNomePessoa.innerHTML].fraseEfeito}"`
+    } else {
+        fraseEfeitoModal.innerHTML = ""
+    }
 
 }
-function navEspacoSelecao(element) {
+function navEspacoSelecao(elemento) {
     const classePadrao = 'nav-link link-light text-center'
 
     const navProto = document.getElementById('nav-prototipagem')
@@ -33,5 +42,21 @@ function navEspacoSelecao(element) {
     navProgramacao.className = classePadrao
     navCulturaMaker.className = classePadrao
 
-    element.className = 'nav-link texto-azul bg-rosa'
+    elemento.className = 'nav-link texto-azul bg-rosa'
+}
+
+
+const informacoesPessoais = {
+    "Luiz Henrique": {
+        emojiFavorito: "🚗",
+        fraseEfeito: "C3 2006 é melhor que uma Ferrari F12",
+    },
+    "Gustavo": {
+        emojiFavorito: "💻",
+        fraseEfeito: "ARDUINOOOOO!",
+    },
+    "Lucas": {
+        emojiFavorito: "🍁😶‍🌫️",
+        fraseEfeito: "Como é que é, amigo?",
+    }
 }

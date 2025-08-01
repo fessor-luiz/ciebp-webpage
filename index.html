@@ -60,7 +60,6 @@
               width="100px"
               onclick="modalInformacoes(this)"
               class="object-fit-cover rounded-circle border border-2 border-warning"
-              onclick="modalInformacoes(this)"
             />
             <span class="text-white fw-bolder">Jefferson</span>
             <span class="text-white fst-italic">Coordenador</span>
@@ -261,31 +260,35 @@
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
+      <!-- prettier-ignore -->
       <div class="modal-dialog modal-dialog-centered">
-        <div
-          class="modal-content d-flex flex-column justify-content-center align-items-center"
-        >
+        <div class="modal-content bg-azul">
           <div class="modal-body">
-            <!-- fotinha -->
-            <img
-              id="img-modal"
-              src=""
-              alt=""
-              height="100px"
-              width="100px"
-              class="object-fit-cover rounded-circle border border-2 border-black"
-            />
-            <h1 id="nome-modal"></h1>
-            <h2 id="espaco-modal"></h2>
-          </div>
-          <div>
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Fechar
-            </button>
+            <div class="row">
+              <div
+                class="col d-flex flex-column justify-content-center align-items-center">
+                <!-- fotinha -->
+                <img id="img-modal" height="150px" width="150px"
+                  class="object-fit-cover rounded-circle border border-2 border-black"/>
+              </div>
+              <div class="col d-flex flex-column justify-content-center align-items-start">
+                <!-- informações -->
+                <span id="nome-modal" class="display-6 text-white text-start"></span>
+                <span id="espaco-modal" class="fs-5 text-white text-start"></span>
+              </div>
+            </div>
+            <div class="mt-2 row ">
+              <div class="col d-flex flex-column justify-content-center align-items-center">
+                <blockquote class="blockquote">
+                  <p id="frase-efeito" class="text-white fst-italic text-center"></p>
+                </blockquote>  
+              </div>
+            </div>
+            <div class="mt-2 d-flex align-items-center justify-content-center">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Fechar
+              </button>
+            </div>
           </div>
         </div>
       </div>
