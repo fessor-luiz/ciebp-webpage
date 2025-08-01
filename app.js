@@ -58,5 +58,8 @@ const informacoesPessoais = {
     "Lucas": {
         emojiFavorito: "🍁😶‍🌫️",
         fraseEfeito: "Como é que é, amigo?",
-    }
+    }, "Jefferson": {
+        emojiFavorito: "🍁😶‍🌫️",
+        fraseEfeito: "Não😇",
+    },
 }
