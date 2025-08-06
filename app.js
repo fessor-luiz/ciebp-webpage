@@ -16,6 +16,10 @@ primeLucas.addEventListener('click', () => {
 
         imgSRC.src = 'src/img/avatar/Lucas_prime.png'
         nomeSRC.innerHTML = "Prime Lucas"
+        alert("Você desbloqueou um personagem secreto!")
+        const modalCloseBtn = document.getElementById('modal-close-button')
+        modalCloseBtn.click()
+
     }
 })
 
@@ -122,7 +126,7 @@ const informacoesPessoais = {
     },
     "Prime Lucas": {
         emojiFavorito: "🤟🏾",
-        fraseEfeito: "rola um d20 ai!",
+        fraseEfeito: "Um bobótico in the wild",
     },
 
 }
