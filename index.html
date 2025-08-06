@@ -235,18 +235,24 @@
       <!-- ESPAÇOS -->
       <div class="row bg-azul m-0 p-0">
         <span class="h1 text-center text-light">Espaços</span>
-        <div class="d-flex flex-column col">
+        <div class="d-flex flex-column col-12">
           <!-- prettier-ignore -->
-          <nav class="nav flex-column p-0" id="espacos">
-            <a class="nav-link link-light text-center" onclick="navEspacoSelecao(this)" id="nav-prototipagem" href="#espacos">Prototipagem</a>
-            <a class="nav-link link-light text-center" onclick="navEspacoSelecao(this)" id="nav-robotica" href="#espacos">Robótica</a>
-            <a class="nav-link link-light text-center" onclick="navEspacoSelecao(this)" id="nav-cultura-digital" href="#espacos">Cultura Digital</a>
-            <a class="nav-link link-light text-center" onclick="navEspacoSelecao(this)" id="nav-hub" href="#espacos">Hub de Inovação</a>
-            <a class="nav-link link-light text-center" onclick="navEspacoSelecao(this)" id="nav-programacao" href="#espacos">Programção</a>
-            <a class="nav-link link-light text-center" onclick="navEspacoSelecao(this)" id="nav-cultura-maker" href="#espacos">Cultura Maker</a>
-          </nav>
+          <nav class="nav p-0 gap-1" id="espacos">
+               <div class="col">
+                 <a class="nav-link link-light text-center border border-white rounded-3 mt-2" onclick="navEspacoSelecao(this)" id="nav-prototipagem" href="#espacos">Prototipagem</a>
+                 <a class="nav-link link-light text-center border border-white rounded-3 mt-2" onclick="navEspacoSelecao(this)" id="nav-robotica" href="#espacos">Robótica</a>
+                 <a class="nav-link link-light text-center border border-white rounded-3 mt-2" onclick="navEspacoSelecao(this)" id="nav-cultura-digital" href="#espacos">Cultura Digital</a>
+               </div>
+               <div class="col">
+                 <a class="nav-link link-light text-center border border-white rounded-3  mt-2" onclick="navEspacoSelecao(this)" id="nav-hub" href="#espacos">Hub de Inovação</a>
+                 <a class="nav-link link-light text-center border border-white rounded-3  mt-2" onclick="navEspacoSelecao(this)" id="nav-programacao" href="#espacos">Programação</a>
+                 <a class="nav-link link-light text-center border border-white rounded-3  mt-2" onclick="navEspacoSelecao(this)" id="nav-cultura-maker" href="#espacos">Cultura Maker</a>
+               </div>
+             </nav>
         </div>
-        <div class="col p-0"></div>
+        <div class="col m-3 d-flex align-items-center">
+          <div id="descricao-espacos" class="text-white text-center lead"></div>
+        </div>
       </div>
     </div>
 
@@ -260,13 +266,12 @@
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <!-- prettier-ignore -->
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-azul">
           <div class="modal-body">
+            <!-- prettier-ignore -->
             <div class="row">
-              <div
-                class="col d-flex flex-column justify-content-center align-items-center">
+              <div class="col d-flex flex-column justify-content-center align-items-center">
                 <!-- fotinha -->
                 <img id="img-modal" height="150px" width="150px"
                   class="object-fit-cover rounded-circle border border-2 border-black"/>
@@ -278,15 +283,24 @@
                 <span id="espaco-modal" class="fs-5 text-white text-start"></span>
               </div>
             </div>
-            <div class="mt-2 row ">
-              <div class="col d-flex flex-column justify-content-center align-items-center">
+            <div class="mt-2 row">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
                 <blockquote class="blockquote">
-                  <p id="frase-efeito" class="text-white fst-italic text-center"></p>
-                </blockquote>  
+                  <p
+                    id="frase-efeito"
+                    class="text-white fst-italic text-center"
+                  ></p>
+                </blockquote>
               </div>
             </div>
             <div class="mt-2 d-flex align-items-center justify-content-center">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
                 Fechar
               </button>
             </div>
