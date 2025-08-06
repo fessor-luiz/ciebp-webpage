@@ -132,6 +132,7 @@
             <!-- Julio Cesar -->
             <div class="d-flex flex-column align-items-center">
               <img
+                id="julio-prime-img"
                 data-bs-target="#staticBackdrop"
                 data-bs-toggle="modal"
                 src="src/img/avatar/Julio.png"
@@ -141,7 +142,11 @@
                 class="object-fit-cover rounded-circle border border-2 border-danger"
               />
 
-              <span class="text-white text-center fw-bolder">Julio Cesar</span>
+              <span
+                class="text-white text-center fw-bolder"
+                id="julio-prime-nome"
+                >Julio Cesar</span
+              >
               <span class="text-white fst-italic">Prototipagem</span>
             </div>
             <!-- Katharine -->
@@ -258,12 +263,14 @@
         </div>
       </div>
 
+      <!-- ÍCONES EIXOS TEMÁTICOS -->
       <div class="row bg-rosa p-0 m-0 mt-1 text-center">
         <div class="col-12 mb-3">
           <span class="h1 text-white">Eixos temáticos</span>
         </div>
         <div class="col p-0 d-flex flex-column align-items-center">
           <img
+            onclick="selecionarEixo(this)"
             class="p-2 icones-trilhas border border-1 border-white rounded-4 object-fit-cover bg-azul"
             src="src/img/icons/Sustentabilidade.png"
             alt="Icone sustentabilidade"
@@ -313,7 +320,7 @@
               </div>
               <div class="col d-flex flex-column justify-content-center align-items-start">
                 <!-- informações -->
-                <span id="emoji-modal" class="fs-1 align-self-center"></span>
+                <span id="emoji-modal" class="fs-1 align-self-start"></span>
                 <span id="nome-modal" class="display-6 text-white text-start"></span>
                 <span id="espaco-modal" class="fs-5 text-white text-start"></span>
               </div>

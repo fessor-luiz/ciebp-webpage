@@ -10,7 +10,7 @@ let primeLucasCount = 0
 primeLucas.addEventListener('click', () => {
     primeLucasCount++
 
-    if (primeLucasCount === 10) {
+    if (primeLucasCount === 30) {
         const imgSRC = document.getElementById('lucas-prime-img')
         const nomeSRC = document.getElementById('lucas-prime-nome')
 
@@ -23,6 +23,31 @@ primeLucas.addEventListener('click', () => {
     }
 })
 
+let primeJulio = 0
+
+primeLucas.addEventListener('click', () => {
+    primeJulio++
+
+    if (primeJulio === 20) {
+        const imgSRC = document.getElementById('julio-prime-img')
+        const nomeSRC = document.getElementById('julio-prime-nome')
+
+        imgSRC.src = 'src/img/avatar/zangief.png'
+        nomeSRC.innerHTML = "Zangief 3D"
+        alert("Você desbloqueou personagens secretos!")
+        const modalCloseBtn = document.getElementById('modal-close-button')
+        modalCloseBtn.click()
+
+    }
+})
+
+/**
+ * 
+ * @param {HTMLElement} elemento 
+ */
+function selecionarEixo(elemento) {
+
+}
 
 function modalInformacoes(elemento) {
     const imgModal = document.getElementById('img-modal')
@@ -63,10 +88,7 @@ function navEspacoSelecao(elemento) {
 
     descricao_espaco.innerHTML = descricao
     espacoSelecionado = elemento.innerHTML
-
 }
-
-
 const informacoesEspacos = {
     "Prototipagem": {
         descricao: `Espaço para a modelagem e produção de protótipos, com o apoio de equipamentos 
@@ -100,7 +122,6 @@ const informacoesEspacos = {
     },
 
 }
-
 const informacoesPessoais = {
     "Luiz Henrique": {
         emojiFavorito: "🎮",
@@ -128,9 +149,12 @@ const informacoesPessoais = {
         emojiFavorito: "🤟🏾",
         fraseEfeito: "Um bobótico in the wild",
     },
+    "Zangief 3D": {
+        emojiFavorito: "🤼",
+        fraseEfeito: "<img src='https://media.tenor.com/hFhedX7nyYQAAAAj/zangief-spinning.gif'></img>",
+    },
 
 }
-
 function selecionarEspaco(classePadrao) {
     const navProto = document.getElementById('nav-prototipagem')
     const navRobo = document.getElementById('nav-robotica')
