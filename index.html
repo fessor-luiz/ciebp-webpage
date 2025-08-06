@@ -70,7 +70,7 @@
               <img
                 data-bs-target="#staticBackdrop"
                 data-bs-toggle="modal"
-                src="src/img/avatar/Adlai.png"
+                src="src/img/avatar/Adlai_2.png"
                 height="100px"
                 width="100px"
                 onclick="modalInformacoes(this)"
@@ -100,7 +100,7 @@
               <img
                 data-bs-target="#staticBackdrop"
                 data-bs-toggle="modal"
-                src="src/img/avatar/Cristina.png"
+                src="src/img/avatar/Cristina_2.png"
                 height="100px"
                 width="100px"
                 onclick="modalInformacoes(this)"
@@ -149,7 +149,7 @@
               <img
                 data-bs-target="#staticBackdrop"
                 data-bs-toggle="modal"
-                src="src/img/avatar/Katherine.png"
+                src="src/img/avatar/Katharine_2.png"
                 height="100px"
                 width="100px"
                 onclick="modalInformacoes(this)"
@@ -168,7 +168,7 @@
               <img
                 data-bs-target="#staticBackdrop"
                 data-bs-toggle="modal"
-                src="src/img/avatar/Kellen.png"
+                src="src/img/avatar/Kellen_2.png"
                 height="100px"
                 width="100px"
                 onclick="modalInformacoes(this)"
@@ -183,16 +183,19 @@
             <!-- Lucas -->
             <div class="d-flex flex-column align-items-center">
               <img
+                id="lucas-prime-img"
                 data-bs-target="#staticBackdrop"
                 data-bs-toggle="modal"
-                src="src/img/avatar/Lucas.png"
+                src="src/img/avatar/lucas.png"
                 height="100px"
                 width="100px"
                 onclick="modalInformacoes(this)"
                 class="object-fit-cover rounded-circle border border-2 border-primary"
               />
 
-              <span class="text-white fw-bolder">Lucas</span>
+              <span id="lucas-prime-nome" class="text-white fw-bolder"
+                >Lucas</span
+              >
               <span class="text-white fst-italic">Robótica</span>
             </div>
             <!-- Luiz Henrique -->
@@ -218,7 +221,7 @@
             <img
               data-bs-target="#staticBackdrop"
               data-bs-toggle="modal"
-              src="src/img/avatar/Flaviane.png"
+              src="src/img/avatar/Flaviane_2.png"
               height="100px"
               width="100px"
               onclick="modalInformacoes(this)"
@@ -233,8 +236,8 @@
       </div>
 
       <!-- ESPAÇOS -->
-      <div class="row bg-azul m-0 p-0">
-        <span class="h1 text-center text-light">Espaços</span>
+      <div class="row bg-azul m-0 mt-2 p-0">
+        <span class="h1 text-center text-light mt-2">Espaços</span>
         <div class="d-flex flex-column col-12">
           <!-- prettier-ignore -->
           <nav class="nav p-0 gap-1" id="espacos">
@@ -253,6 +256,38 @@
         <div class="col m-3 d-flex align-items-center">
           <div id="descricao-espacos" class="text-white text-center lead"></div>
         </div>
+      </div>
+
+      <div class="row bg-rosa p-0 m-0 mt-1 text-center">
+        <div class="col-12 mb-3">
+          <span class="h1 text-white">Eixos temáticos</span>
+        </div>
+        <div class="col">
+          <img
+            class="p-2 icones-trilhas border border-1 border-white rounded-4 object-fit-cover bg-azul"
+            src="src/img/icons/Sustentabilidade.png"
+            alt="Icone sustentabilidade"
+          />
+          <span class="lead fs-6">Sustentabilidade</span>
+        </div>
+        <div class="col">
+          <img
+            class="p-2 icones-trilhas border border-1 border-white rounded-4 bg-azul"
+            src="src/img/icons/IoT.png"
+            alt="Ícone IoT"
+          />
+          <span class="lead fs-6"> IoT </span>
+        </div>
+        <div class="col">
+          <img
+            class="p-2 icones-trilhas border border-1 border-white rounded-4 object-fit-contain bg-azul"
+            src="src/img/icons/Trabalho.png"
+            alt="Ícone Mundo do Trabalho"
+          />
+
+          <span class="lead fs-6"> Mundo do Trabalho </span>
+        </div>
+        <div class="col-12" id="eixos-trilhas"></div>
       </div>
     </div>
 

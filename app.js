@@ -4,6 +4,22 @@ if (!isMobile) {
     window.location.href = "notMobile.html"
 }
 
+const primeLucas = document.getElementById('img-modal')
+let primeLucasCount = 0
+
+primeLucas.addEventListener('click', () => {
+    primeLucasCount++
+
+    if (primeLucasCount === 10) {
+        const imgSRC = document.getElementById('lucas-prime-img')
+        const nomeSRC = document.getElementById('lucas-prime-nome')
+
+        imgSRC.src = 'src/img/avatar/Lucas_prime.png'
+        nomeSRC.innerHTML = "Prime Lucas"
+    }
+})
+
+
 function modalInformacoes(elemento) {
     const imgModal = document.getElementById('img-modal')
     const nomeModal = document.getElementById('nome-modal')
@@ -35,10 +51,11 @@ function navEspacoSelecao(elemento) {
 
     if (elemento.innerHTML === espacoSelecionado) {
         descricao_espaco.innerHTML = ''
+        espacoSelecionado = ''
         return
     }
 
-    elemento.className = 'nav-link text-center border border-white rounded-3 texto-azul bg-rosa mt-2'
+    elemento.className = 'nav-link text-center border border-warning rounded-3 fw-bold text-white bg-dark mt-2'
 
     descricao_espaco.innerHTML = descricao
     espacoSelecionado = elemento.innerHTML
@@ -103,6 +120,11 @@ const informacoesPessoais = {
         emojiFavorito: "",
         fraseEfeito: "",
     },
+    "Prime Lucas": {
+        emojiFavorito: "🤟🏾",
+        fraseEfeito: "rola um d20 ai!",
+    },
+
 }
 
 function selecionarEspaco(classePadrao) {
