@@ -1,5 +1,5 @@
 const isMobile = window.matchMedia("(max-width: 768px)").matches
-
+let espacoSelecionado = ''
 if (!isMobile) {
     window.location.href = "notMobile.html"
 }
@@ -29,14 +29,19 @@ function modalInformacoes(elemento) {
 }
 function navEspacoSelecao(elemento) {
     const classePadrao = 'nav-link link-light text-center border border-white rounded-3 mt-2'
-
-    selecionarEspaco(classePadrao)
-    elemento.className = 'nav-link text-center border border-white rounded-3 texto-azul bg-rosa mt-2'
-
     const descricao_espaco = document.getElementById('descricao-espacos')
     const descricao = informacoesEspacos[`${elemento.innerHTML}`].descricao
+    selecionarEspaco(classePadrao)
+
+    if (elemento.innerHTML === espacoSelecionado) {
+        descricao_espaco.innerHTML = ''
+        return
+    }
+
+    elemento.className = 'nav-link text-center border border-white rounded-3 texto-azul bg-rosa mt-2'
 
     descricao_espaco.innerHTML = descricao
+    espacoSelecionado = elemento.innerHTML
 
 }
 
