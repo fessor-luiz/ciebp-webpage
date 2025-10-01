@@ -8,10 +8,9 @@ body {
 }
 #equipe::-webkit-scrollbar {
   display: none;
+  scrollbar-width: none;
 }
-.rounded-circle {
-  box-shadow: 1px 3px 5px;
-}
+
 .cabecalho {
   overflow-x: hidden;
 }
