@@ -44,27 +44,51 @@
       </div>
 
       <!-- EQUIPE -->
-      <h1 class="text-center text-usppercase text-white fw-bolder">Equipe</h1>
+      <h1 class="text-center text-usppercase text-white fw-bolder mt-1">
+        Equipe
+      </h1>
       <div
         id="equipe"
-        class="d-flex overflow-x-hidden justify-content-md-center"
+        class="d-flex overflow-x-scroll gap-2 justify-content-md-center mt-3 mb-3"
       >
-        <div class="row overflow-y-scroll">
-          <!-- Jefferson -->
-          <div id="coordenador" class="d-flex flex-column align-items-center">
-            <img
-              data-bs-target="#staticBackdrop"
-              data-bs-toggle="modal"
-              src="src/img/avatar/Jefferson.png"
-              height="100px"
-              width="100px"
-              onclick="modalInformacoes(this)"
-              class="object-fit-cover rounded-circle border border-2 border-warning"
-            />
-            <span class="text-white fw-bolder">Jefferson</span>
-            <span class="text-white fst-italic">Coordenador</span>
+        <div class="bg-dark ms-1 p-1 pt-3 rounded">
+          <div class="d-flex justify-content-center">
+            <div id="coordenador" class="d-flex flex-column align-items-center">
+              <img
+                data-bs-target="#staticBackdrop"
+                data-bs-toggle="modal"
+                src="src/img/avatar/Jefferson.png"
+                height="100px"
+                width="100px"
+                onclick="modalInformacoes(this)"
+                class="object-fit-cover rounded-circle border border-2 border-warning"
+              />
+              <span class="text-white fw-bolder">Jefferson</span>
+            </div>
           </div>
-          <div class="col p-0">
+          <h1 class="text-center text-white">Coordenador</h1>
+        </div>
+
+        <div class="bg-dark p-1 pt-3 rounded">
+          <div class="d-flex justify-content-center">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                data-bs-target="#staticBackdrop"
+                data-bs-toggle="modal"
+                src="src/img/avatar/Flaviane_2.png"
+                height="100px"
+                width="100px"
+                onclick="modalInformacoes(this)"
+                class="object-fit-cover rounded-circle border border-2 border-info"
+              />
+              <span class="text-white fw-bolder">Flaviane</span>
+            </div>
+          </div>
+          <h1 class="text-center text-white">Hub</h1>
+        </div>
+
+        <div class="bg-dark p-1 pt-3 rounded">
+          <div class="d-flex gap-2">
             <!-- Adlai -->
             <div class="d-flex flex-column align-items-center">
               <img
@@ -78,23 +102,31 @@
               />
 
               <span class="text-white fw-bolder">Adlai</span>
-              <span class="text-white fst-italic">Robótica</span>
             </div>
-            <!-- André -->
+            <!-- Lucas -->
             <div class="d-flex flex-column align-items-center">
               <img
+                id="lucas-prime-img"
                 data-bs-target="#staticBackdrop"
                 data-bs-toggle="modal"
-                src="src/img/avatar/Andre.png"
+                src="src/img/avatar/Lucas.png"
                 height="100px"
                 width="100px"
                 onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-danger"
+                class="object-fit-cover rounded-circle border border-2 border-primary"
               />
 
-              <span class="text-white fw-bolder">André</span>
-              <span class="text-white fst-italic">Prototipagem</span>
+              <span id="lucas-prime-nome" class="text-white fw-bolder"
+                >Lucas</span
+              >
             </div>
+          </div>
+
+          <h1 class="text-center text-white">Robótica</h1>
+        </div>
+
+        <div class="bg-dark p-1 pt-3 rounded">
+          <div class="d-flex gap-2">
             <!-- Cristina -->
             <div class="d-flex flex-column align-items-center">
               <img
@@ -108,26 +140,39 @@
               />
 
               <span class="text-white fw-bolder">Cristina</span>
-              <span class="text-white text-center fst-italic"
-                >Cultura Digital</span
-              >
             </div>
-          </div>
-          <div class="col p-0">
-            <!-- Gustavo -->
+            <!-- Katharine -->
             <div class="d-flex flex-column align-items-center">
               <img
                 data-bs-target="#staticBackdrop"
                 data-bs-toggle="modal"
-                src="src/img/avatar/Gustavo.png"
+                src="src/img/avatar/Katharine_2.png"
                 height="100px"
                 width="100px"
                 onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-success"
+                class="object-fit-cover rounded-circle border border-2 border-info"
               />
 
-              <span class="text-white fw-bolder">Gustavo</span>
-              <span class="text-white fst-italic">Programação</span>
+              <span class="text-white fw-bolder">Katharine</span>
+            </div>
+          </div>
+          <h1 class="text-center text-white">Cultura Digital</h1>
+        </div>
+
+        <div class="bg-dark p-1 pt-3 rounded">
+          <div class="d-flex gap-2">
+            <!-- André -->
+            <div class="d-flex flex-column align-items-center">
+              <img
+                data-bs-target="#staticBackdrop"
+                data-bs-toggle="modal"
+                src="src/img/avatar/Andre.png"
+                height="100px"
+                width="100px"
+                onclick="modalInformacoes(this)"
+                class="object-fit-cover rounded-circle border border-2 border-danger"
+              />
+              <span class="text-white fw-bolder">André</span>
             </div>
             <!-- Julio Cesar -->
             <div class="d-flex flex-column align-items-center">
@@ -147,27 +192,13 @@
                 id="julio-prime-nome"
                 >Julio Cesar</span
               >
-              <span class="text-white fst-italic">Prototipagem</span>
-            </div>
-            <!-- Katharine -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Katharine_2.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-info"
-              />
-
-              <span class="text-white fw-bolder">Katharine</span>
-              <span class="text-white text-center fst-italic"
-                >Cultura Digital</span
-              >
             </div>
           </div>
-          <div class="col p-0">
+          <h1 class="text-center text-white">Prototipagem</h1>
+        </div>
+
+        <div class="bg-dark p-1 pt-3 rounded">
+          <div class="d-flex gap-2">
             <!-- Kellen -->
             <div class="d-flex flex-column align-items-center">
               <img
@@ -181,27 +212,40 @@
               />
 
               <span class="text-white fw-bolder">Kellen</span>
-              <span class="text-white text-center fst-italic"
-                >Cultura Maker</span
-              >
             </div>
-            <!-- Lucas -->
+            <!-- Laís Lisboa -->
             <div class="d-flex flex-column align-items-center">
               <img
-                id="lucas-prime-img"
                 data-bs-target="#staticBackdrop"
                 data-bs-toggle="modal"
-                src="src/img/avatar/Lucas.png"
+                src=""
                 height="100px"
                 width="100px"
                 onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-primary"
+                class="object-fit-cover rounded-circle border border-2 border-secondary"
               />
 
-              <span id="lucas-prime-nome" class="text-white fw-bolder"
-                >Lucas</span
-              >
-              <span class="text-white fst-italic">Robótica</span>
+              <span class="text-white fw-bolder">Laís</span>
+            </div>
+          </div>
+          <h1 class="text-center text-white">Cultura Maker</h1>
+        </div>
+
+        <div class="bg-dark p-1 pt-3 rounded me-1">
+          <div class="d-flex gap-2">
+            <!-- Gustavo -->
+            <div class="d-flex flex-column align-items-center">
+              <img
+                data-bs-target="#staticBackdrop"
+                data-bs-toggle="modal"
+                src="src/img/avatar/Gustavo.png"
+                height="100px"
+                width="100px"
+                onclick="modalInformacoes(this)"
+                class="object-fit-cover rounded-circle border border-2 border-success"
+              />
+
+              <span class="text-white fw-bolder">Gustavo</span>
             </div>
             <!-- Luiz Henrique -->
             <div class="d-flex flex-column align-items-center">
@@ -215,28 +259,12 @@
                 class="object-fit-cover rounded-circle border border-2 border-success"
               />
 
-              <span class="text-white text-center fw-bolder"
-                >Luiz Henrique</span
+              <span class="text-white text-center fw-bolder d-flex"
+                >Luiz H.</span
               >
-              <span class="text-white fst-italic">Programação</span>
             </div>
           </div>
-          <!-- Flaviane -->
-          <div class="d-flex flex-column align-items-center">
-            <img
-              data-bs-target="#staticBackdrop"
-              data-bs-toggle="modal"
-              src="src/img/avatar/Flaviane_2.png"
-              height="100px"
-              width="100px"
-              onclick="modalInformacoes(this)"
-              class="object-fit-cover rounded-circle border border-2 border-info"
-            />
-            <span class="text-white fw-bolder">Flaviane</span>
-            <span class="text-white text-center fst-italic"
-              >Hub de Inovação</span
-            >
-          </div>
+          <h1 class="text-center text-white">Programação</h1>
         </div>
       </div>
 
@@ -270,31 +298,82 @@
         </div>
         <div class="col p-0 d-flex flex-column align-items-center">
           <img
+            id="eixo-sustentabilidade"
             onclick="selecionarEixo(this)"
             class="p-2 icones-trilhas border border-1 border-white rounded-4 object-fit-cover bg-azul"
-            src="src/img/icons/Sustentabilidade.png"
+            src="src/img/icons/brancos/meio-ambiente-branco.png"
             alt="Icone sustentabilidade"
           />
           <span class="lead fs-6">Sustentabilidade</span>
         </div>
         <div class="col p-0 d-flex flex-column align-items-center">
           <img
+            id="eixo-iot"
+            onclick="selecionarEixo(this)"
             class="p-2 icones-trilhas border border-1 border-white rounded-4 bg-azul"
-            src="src/img/icons/IoT.png"
+            src="src/img/icons/brancos/iot-branco.png"
             alt="Ícone IoT"
           />
           <span class="lead fs-6"> IoT </span>
         </div>
         <div class="col p-0 d-flex flex-column align-items-center">
           <img
+            id="eixo-trabalho"
+            onclick="selecionarEixo(this)"
             class="p-2 icones-trilhas border border-1 border-white rounded-4 object-fit-contain bg-azul"
-            src="src/img/icons/Trabalho.png"
+            src="src/img/icons/brancos/mundo-trabalho-branco.png"
             alt="Ícone Mundo do Trabalho"
           />
-
           <span class="lead fs-6 text-center"> Mundo do Trabalho </span>
         </div>
-        <div class="col-12" id="eixos-trilhas"></div>
+
+        <ul
+          id="trilhas-eixos"
+          class="d-none justify-content-center gap-2 nav nav-pills mt-3"
+        >
+          <li class="nav-item bg-azul">
+            <a
+              href="#trilhas-eixos"
+              class="nav-link link-light link-underline-opacity-0 p-2"
+              >Prototipagem</a
+            >
+          </li>
+          <li class="nav-item bg-azul">
+            <a
+              href="#trilhas-eixos"
+              class="nav-link link-light link-underline-opacity-0 p-2"
+              >Robótica</a
+            >
+          </li>
+          <li class="nav-item bg-azul">
+            <a
+              href="#trilhas-eixos"
+              class="nav-link link-light link-underline-opacity-0 p-2"
+              >Cultura Digital</a
+            >
+          </li>
+          <li class="nav-item bg-azul">
+            <a
+              href="#trilhas-eixos"
+              class="nav-link link-light link-underline-opacity-0 p-2"
+              >Hub de Inovação</a
+            >
+          </li>
+          <li class="nav-item bg-azul">
+            <a
+              href="#trilhas-eixos"
+              class="nav-link link-light link-underline-opacity-0 p-2"
+              >Programação</a
+            >
+          </li>
+          <li class="nav-item bg-azul">
+            <a
+              href="#trilhas-eixos"
+              class="nav-link link-light link-underline-opacity-0 p-2"
+              >Cultura Maker</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
 

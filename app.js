@@ -24,7 +24,6 @@ primeLucas.addEventListener('click', () => {
 })
 
 let primeJulio = 0
-
 primeLucas.addEventListener('click', () => {
     primeJulio++
 
@@ -46,7 +45,29 @@ primeLucas.addEventListener('click', () => {
  * @param {HTMLElement} elemento 
  */
 function selecionarEixo(elemento) {
+    const padrao = "p-2 icones-trilhas border border-1 border-white rounded-4 object-fit-cover bg-azul"
 
+    const eixoSustentabildiade = document.getElementById("eixo-sustentabilidade")
+    const eixoIot = document.getElementById("eixo-iot")
+    const eixoTrabalho = document.getElementById("eixo-trabalho")
+
+    const salasEixos = document.getElementById("trilhas-eixos")
+
+    if (elemento.className.includes("bg-dark")) {
+        salasEixos.className = "d-none"
+        elemento.className = "p-2 icones-trilhas border border-1 border-warning rounded-4 object-fit-cover bg-azul"
+        return
+    }
+
+    salasEixos.className = "d-flex justify-content-center gap-2 nav nav-pills mt-3"
+
+    // padronizar icones
+    eixoSustentabildiade.className = padrao
+    eixoIot.className = padrao
+    eixoTrabalho.className = padrao
+
+    // selecionar icone
+    elemento.className = "p-2 icones-trilhas border border-1 border-warning rounded-4 object-fit-cover bg-dark"
 }
 
 function modalInformacoes(elemento) {
@@ -169,4 +190,13 @@ function selecionarEspaco(classePadrao) {
     navHub.className = classePadrao
     navProgramacao.className = classePadrao
     navCulturaMaker.className = classePadrao
+}
+
+
+/**
+ * 
+ * @param {HTMLElement} elemento 
+ */
+function selecionarEspacoEixo(elemento){
+
 }
