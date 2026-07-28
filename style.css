@@ -37,6 +37,7 @@ body {
 }
 .img-logo-tela-inicial {
   width: 250px;
+  animation: pulso 0.8s ease-in-out infinite alternate;
 }
 
 p {
@@ -67,9 +68,6 @@ p {
   .actions-buttons {
     width: 150px;
   }
-  .img-logo-tela-inicial {
-    width: 250px;
-  }
 
   p {
     width: 80%;
@@ -82,5 +80,14 @@ p {
     width: 45%;
     display: flex;
     justify-content: center;
+  }
+}
+
+@keyframes pulso {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.05;
   }
 }
