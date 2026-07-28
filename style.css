@@ -1,36 +1,86 @@
-html,
+:root {
+  --paleta-ciebp-roxo: #25245a;
+  --paleta-cibep-rosa: #b53093;
+  --paleta-ciebp-rosa-2: #e8038c;
+  --paleta-ciebp-rosa-3: #ed1a6b;
+
+  --paleta-espacos-1: #29bed0;
+  --paleta-espacos-2: #f07a0e;
+  --paleta-espacos-2: #93d31a;
+
+  --fundo-0: #e8e1d8;
+  --fundo-1: #afc87e;
+  --fundo-2: #ffb986;
+  --fundo-3: #8bdce6;
+  --fundo-4: #ffb4d5;
+  --fundo-5: #daa1ff;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: white;
-  overflow-y: visible;
-}
-#equipe::-webkit-scrollbar {
-  display: none;
-  scrollbar-width: none;
+  background-color: var(--fundo-0);
 }
 
-.cabecalho {
-  overflow-x: hidden;
-}
-.bg-azul {
-  background-color: #25245a;
-}
-.bg-rosa {
-  background-color: #871f62;
+.container {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.text-rosa {
-  color: #871f62;
+.actions-icons {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.actions-buttons {
+  width: 300px;
+}
+.img-logo-tela-inicial {
+  width: 250px;
 }
 
-.text-azul {
-  color: #25245a;
+p {
+  width: 50%;
+  text-align: justify;
+  font-size: 24px;
 }
 
-.icones-trilhas {
-  width: 100px;
-  height: 100px;
+.mapa {
+  margin-top: 2%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actions-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .actions-buttons {
+    width: 150px;
+  }
+  .img-logo-tela-inicial {
+    width: 250px;
+  }
+
+  p {
+    width: 80%;
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .mapa {
+    margin-top: 50px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+  }
 }

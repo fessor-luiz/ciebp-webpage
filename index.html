@@ -1,440 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- prettier-ignore -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- prettier-ignore -->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-
-    <title>CIEBP - ÂNGELO MENDES</title>
   </head>
-  <body class="bg-rosa">
-    <div class="col">
-      <header class="cabecalho d-flex bg-white">
-        <!-- LOGO DE SP + REDES SOCIAIS -->
-        <div class="rounded-end-pill bg-black p-4 w-75">
-          <img src="src/img/logo-governo-do-estado-sp.png" alt="" />
-        </div>
-        <div class="w-100 d-flex align-items-end justify-content-end">
-          <button class="ms-1 btn btn-outline-danger d-flex align-items-center">
-            <i class="me-1 bi bi-instagram fs-4"></i>
-          </button>
-          <button class="btn btn-outline-danger d-flex align-items-center">
-            <i class="me-1 bi bi-youtube fs-4"></i>
-          </button>
-        </div>
-      </header>
-      <!-- NOME DA ESCOLA -->
-      <div class="bg-azul vw-100 p-3 d-flex align-items-center">
-        <div class="col-auto">
-          <img
-            src="src/img/logo-ciebp-branco.png"
-            alt="logo-ciebp"
-            style="height: 75px"
-          />
-        </div>
-        <div
-          class="col d-flex flex-column justify-content-center align-items-center"
-        >
-          <h1 class="text-white text-center fw-bolder">Angelo Mendes</h1>
-        </div>
+  <body>
+    <div class="container">
+      <img
+        class="img-logo-tela-inicial"
+        src="src/logotipo/Logo CIEBP ANGELO.png"
+        alt="Logotipo CIBEP Ângelo Mendes"
+      />
+      <p>
+        O CIEBP nasceu com a missão de promover e impulsionar a inovação no
+        ambiente educacional. É um espaço que permite a criação, o
+        desenvolvimento, a avaliação e a disponibilização de práticas e
+        tecnologias para atenderem aos desafios da Educação Pública
+        contemporânea.
+      </p>
+      <div class="actions-icons">
+        <img
+          class="actions-buttons"
+          src="src/buttons/action-agende.png"
+          alt=""
+        />
+        <img
+          class="actions-buttons"
+          src="src/buttons/action-saiba-mais.png"
+          alt=""
+        />
       </div>
-
-      <!-- EQUIPE -->
-      <h1 class="text-center text-usppercase text-white fw-bolder mt-1">
-        Equipe
-      </h1>
-      <div
-        id="equipe"
-        class="d-flex overflow-x-scroll gap-2 justify-content-md-center mt-3 mb-3"
-      >
-        <div class="bg-dark ms-1 p-1 pt-3 rounded">
-          <div class="d-flex justify-content-center">
-            <div id="coordenador" class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Jefferson.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-warning"
-              />
-              <span class="text-white fw-bolder">Jefferson</span>
-            </div>
-          </div>
-          <h1 class="text-center text-white">Coordenador</h1>
-        </div>
-
-        <div class="bg-dark p-1 pt-3 rounded">
-          <div class="d-flex justify-content-center">
-            <div class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Flaviane_2.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-info"
-              />
-              <span class="text-white fw-bolder">Flaviane</span>
-            </div>
-          </div>
-          <h1 class="text-center text-white">Hub</h1>
-        </div>
-
-        <div class="bg-dark p-1 pt-3 rounded">
-          <div class="d-flex gap-2">
-            <!-- Adlai -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Adlai_2.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-primary"
-              />
-
-              <span class="text-white fw-bolder">Adlai</span>
-            </div>
-            <!-- Lucas -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                id="lucas-prime-img"
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Lucas.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-primary"
-              />
-
-              <span id="lucas-prime-nome" class="text-white fw-bolder"
-                >Lucas</span
-              >
-            </div>
-          </div>
-
-          <h1 class="text-center text-white">Robótica</h1>
-        </div>
-
-        <div class="bg-dark p-1 pt-3 rounded">
-          <div class="d-flex gap-2">
-            <!-- Cristina -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Cristina_2.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-info"
-              />
-
-              <span class="text-white fw-bolder">Cristina</span>
-            </div>
-            <!-- Katharine -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Katharine_2.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-info"
-              />
-
-              <span class="text-white fw-bolder">Katharine</span>
-            </div>
-          </div>
-          <h1 class="text-center text-white">Cultura Digital</h1>
-        </div>
-
-        <div class="bg-dark p-1 pt-3 rounded">
-          <div class="d-flex gap-2">
-            <!-- André -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Andre.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-danger"
-              />
-              <span class="text-white fw-bolder">André</span>
-            </div>
-            <!-- Julio Cesar -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                id="julio-prime-img"
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Julio.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-danger"
-              />
-
-              <span
-                class="text-white text-center fw-bolder"
-                id="julio-prime-nome"
-                >Julio Cesar</span
-              >
-            </div>
-          </div>
-          <h1 class="text-center text-white">Prototipagem</h1>
-        </div>
-
-        <div class="bg-dark p-1 pt-3 rounded">
-          <div class="d-flex gap-2">
-            <!-- Kellen -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Kellen_2.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-secondary"
-              />
-
-              <span class="text-white fw-bolder">Kellen</span>
-            </div>
-            <!-- Laís Lisboa -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src=""
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-secondary"
-              />
-
-              <span class="text-white fw-bolder">Laís</span>
-            </div>
-          </div>
-          <h1 class="text-center text-white">Cultura Maker</h1>
-        </div>
-
-        <div class="bg-dark p-1 pt-3 rounded me-1">
-          <div class="d-flex gap-2">
-            <!-- Gustavo -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Gustavo.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-success"
-              />
-
-              <span class="text-white fw-bolder">Gustavo</span>
-            </div>
-            <!-- Luiz Henrique -->
-            <div class="d-flex flex-column align-items-center">
-              <img
-                data-bs-target="#staticBackdrop"
-                data-bs-toggle="modal"
-                src="src/img/avatar/Luiz.png"
-                height="100px"
-                width="100px"
-                onclick="modalInformacoes(this)"
-                class="object-fit-cover rounded-circle border border-2 border-success"
-              />
-
-              <span class="text-white text-center fw-bolder d-flex"
-                >Luiz H.</span
-              >
-            </div>
-          </div>
-          <h1 class="text-center text-white">Programação</h1>
-        </div>
-      </div>
-
-      <!-- ESPAÇOS -->
-      <div class="row bg-azul m-0 mt-2 p-0">
-        <span class="h1 text-center text-light mt-2">Espaços</span>
-        <div class="d-flex flex-column col-12">
-          <!-- prettier-ignore -->
-          <nav class="nav p-0 gap-1" id="espacos">
-               <div class="col">
-                 <a class="nav-link link-light text-center border border-white rounded-3 mt-2" onclick="navEspacoSelecao(this)" id="nav-prototipagem" href="#espacos">Prototipagem</a>
-                 <a class="nav-link link-light text-center border border-white rounded-3 mt-2" onclick="navEspacoSelecao(this)" id="nav-robotica" href="#espacos">Robótica</a>
-                 <a class="nav-link link-light text-center border border-white rounded-3 mt-2" onclick="navEspacoSelecao(this)" id="nav-cultura-digital" href="#espacos">Cultura Digital</a>
-               </div>
-               <div class="col">
-                 <a class="nav-link link-light text-center border border-white rounded-3  mt-2" onclick="navEspacoSelecao(this)" id="nav-hub" href="#espacos">Hub de Inovação</a>
-                 <a class="nav-link link-light text-center border border-white rounded-3  mt-2" onclick="navEspacoSelecao(this)" id="nav-programacao" href="#espacos">Programação</a>
-                 <a class="nav-link link-light text-center border border-white rounded-3  mt-2" onclick="navEspacoSelecao(this)" id="nav-cultura-maker" href="#espacos">Cultura Maker</a>
-               </div>
-             </nav>
-        </div>
-        <div class="col m-3 d-flex align-items-center">
-          <div id="descricao-espacos" class="text-white text-center lead"></div>
-        </div>
-      </div>
-
-      <!-- ÍCONES EIXOS TEMÁTICOS -->
-      <div class="row bg-rosa p-0 m-0 mt-1 text-center">
-        <div class="col-12 mb-3">
-          <span class="h1 text-white">Eixos temáticos</span>
-        </div>
-        <div class="col p-0 d-flex flex-column align-items-center">
-          <img
-            id="eixo-sustentabilidade"
-            onclick="selecionarEixo(this)"
-            class="p-2 icones-trilhas border border-1 border-white rounded-4 object-fit-cover bg-azul"
-            src="src/img/icons/brancos/meio-ambiente-branco.png"
-            alt="Icone sustentabilidade"
-          />
-          <span class="lead fs-6">Sustentabilidade</span>
-        </div>
-        <div class="col p-0 d-flex flex-column align-items-center">
-          <img
-            id="eixo-iot"
-            onclick="selecionarEixo(this)"
-            class="p-2 icones-trilhas border border-1 border-white rounded-4 bg-azul"
-            src="src/img/icons/brancos/iot-branco.png"
-            alt="Ícone IoT"
-          />
-          <span class="lead fs-6"> IoT </span>
-        </div>
-        <div class="col p-0 d-flex flex-column align-items-center">
-          <img
-            id="eixo-trabalho"
-            onclick="selecionarEixo(this)"
-            class="p-2 icones-trilhas border border-1 border-white rounded-4 object-fit-contain bg-azul"
-            src="src/img/icons/brancos/mundo-trabalho-branco.png"
-            alt="Ícone Mundo do Trabalho"
-          />
-          <span class="lead fs-6 text-center"> Mundo do Trabalho </span>
-        </div>
-
-        <ul
-          id="trilhas-eixos"
-          class="d-none justify-content-center gap-2 nav nav-pills mt-3"
-        >
-          <li class="nav-item bg-azul">
-            <a
-              href="#trilhas-eixos"
-              class="nav-link link-light link-underline-opacity-0 p-2"
-              >Prototipagem</a
-            >
-          </li>
-          <li class="nav-item bg-azul">
-            <a
-              href="#trilhas-eixos"
-              class="nav-link link-light link-underline-opacity-0 p-2"
-              >Robótica</a
-            >
-          </li>
-          <li class="nav-item bg-azul">
-            <a
-              href="#trilhas-eixos"
-              class="nav-link link-light link-underline-opacity-0 p-2"
-              >Cultura Digital</a
-            >
-          </li>
-          <li class="nav-item bg-azul">
-            <a
-              href="#trilhas-eixos"
-              class="nav-link link-light link-underline-opacity-0 p-2"
-              >Hub de Inovação</a
-            >
-          </li>
-          <li class="nav-item bg-azul">
-            <a
-              href="#trilhas-eixos"
-              class="nav-link link-light link-underline-opacity-0 p-2"
-              >Programação</a
-            >
-          </li>
-          <li class="nav-item bg-azul">
-            <a
-              href="#trilhas-eixos"
-              class="nav-link link-light link-underline-opacity-0 p-2"
-              >Cultura Maker</a
-            >
-          </li>
-        </ul>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.426007967443!2d-46.64927685841755!3d-23.645470156006493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b3c2e6e4d01%3A0x7f0d61ea630f8905!2sCIEBP%20-%20Centro%20de%20Inova%C3%A7%C3%A3o%20da%20Educa%C3%A7%C3%A3o%20B%C3%A1sica%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1785245704070!5m2!1spt-BR!2sbr"
+          width="800"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
       </div>
     </div>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-azul">
-          <div class="modal-body">
-            <!-- prettier-ignore -->
-            <div class="row">
-              <div class="col d-flex flex-column justify-content-center align-items-center">
-                <!-- fotinha -->
-                <img id="img-modal" height="150px" width="150px"
-                  class="object-fit-cover rounded-circle border border-2 border-black"/>
-              </div>
-              <div class="col d-flex flex-column justify-content-center align-items-start">
-                <!-- informações -->
-                <span id="emoji-modal" class="fs-1 align-self-start"></span>
-                <span id="nome-modal" class="display-6 text-white text-start"></span>
-                <span id="espaco-modal" class="fs-5 text-white text-start"></span>
-              </div>
-            </div>
-            <div class="mt-2 row">
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-              >
-                <blockquote class="blockquote">
-                  <p
-                    id="frase-efeito"
-                    class="text-white fst-italic text-center"
-                  ></p>
-                </blockquote>
-              </div>
-            </div>
-            <div class="mt-2 d-flex align-items-center justify-content-center">
-              <button
-                type="button"
-                id="modal-close-button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Fechar
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- prettier-ignore -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
   </body>
 </html>
